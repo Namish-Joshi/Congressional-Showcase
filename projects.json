@@ -328,5 +328,20 @@
     "district": "NC-02",
     "state": "NC",
     "tags": ["health", "ai", "accessibility"]
-  }
+  },
+  {
+  "slug": "CA-49",
+  "name": "Weiting Wang",
+  "appName": "HeartAngel",
+  "description": "HeartAngel empowers bystanders to save lives by offering real-time CPR feedback and connecting them to nearby emergency support during critical moments.",
+  "thumbnail": "sites/CA-49/thumbnail.png",
+  "location": {
+    "lat": 33.501869,,
+    "lng": -117.662819,
+    "label": "San Juan Capistrano, California"
+  },
+  "district": "CA-49",
+  "state": "CA",
+  "tags": ["Public Health", "Emergency", "CPR"]
+}
 ]

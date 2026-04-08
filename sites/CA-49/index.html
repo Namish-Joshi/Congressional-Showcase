@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TODO: Change the title to your app name and your name -->
+  <title>HeartAngel | Weiting (Catherine) Wang </title>
+
+  <!-- Shared styles — gives you navigation arrows and CAC CSS variables -->
+  <link rel="stylesheet" href="../../assets/css/shared.css">
+
+  <style>
+    /*
+     * TODO: Add your custom styles here. Go wild — this is YOUR page!
+     *
+     * You can use Congressional App Challenge colors with CSS variables:
+     *   var(--HA-navy)  → #1E3A8A
+     *   var(--HA-blue)  → #3B82F6
+     *   var(--HA-light blue)  → #EFF6FF
+     *   var(--HA-red) → #EF4444
+     *
+     * Or use completely your own palette. It's up to you!
+     */
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      color: #333;
+      background: #f9fafc;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 2rem 3rem;
+    }
+
+    header { text-align: center; margin-bottom: 3rem; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 { font-size: 1.4rem; margin-bottom: 1rem; }
+    p { line-height: 1.7; margin-bottom: 1rem; }
+
+    .video iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    footer a { color: var(--cac-red); }
+  </style>
+</head>
+<body>
+  <!-- Back button — links to the main showcase -->
+  <a href="../../" class="back-to-showcase">&larr; Back to Showcase</a>
+
+  <div class="container">
+    <header>
+      <!-- TODO: Replace with your name -->
+      <h1>Catherine Wang</h1>
+      <!-- Student • Aspiring Developer • Passionate about using technology to save lives -->
+      <p>Empowering bystanders to act in emergencies through real-time CPR guidance and life-saving technology</p>
+    </header>
+
+    <section>
+      <!-- TODO: Tell us about yourself -->
+      <h2>About Me</h2>
+      <p>Hi, I am Catherine, a high school student passionate about science, medicine, and technology. I enjoy combining coding and healthcare to create projects that can make a real-world impact. HeartAngel was developed from my desire to improve emergency response and help people take action during critical moments by providing real-time CPR guidance and connecting them to life-saving resources.</p>
+    </section>
+
+    <section>
+      <!-- TODO: Tell us about your app -->
+      <h2>HeartAngel</h2>
+      <p><em>Giving Life Another Chance</em></p>
+      <p>HeartAngel is a mobile application designed to assist users during real-life cardiac arrest emergencies, while also offering a substantial tool for practicing CPR on a day-to-day basis with live compression feedback based on depth and speed accuracy. </p>
+      <p>This app is designed for anyone — especially bystanders who may not have formal medical training — so they can confidently take action in an emergency. It also aims to support a connected response system by linking users to nearby trained responders and AED devices during a real-life emergency. All together, HeartAngel bridges the gap of bystander unreadiness, limited access to emergency tools, and the need for faster, more coordinated responses during life-threatening situations. </p>
+      <p>HeartAngel was built using Flutter and Dart, allowing it to run across different platforms while providing a smooth and responsive user experience.</p>
+    </section>
+
+    <section class="video">
+      <!-- TODO: Replace YOUR_VIDEO_ID with your YouTube video ID.
+           For example, if your video URL is https://www.youtube.com/watch?v=abc123
+           then your video ID is "abc123" -->
+      <h2>Demo</h2>
+      <iframe
+        src="https://www.youtube.com/embed/l6hRitE_LRQ"
+        title="App Demo Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
+      <!-- Alternative: Self-hosted video (NOT recommended — use YouTube/Vimeo instead
+           to avoid bloating the repository)
+      <video controls width="100%">
+        <source src="assets/demo.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+      -->
+    </section>
+
+    <section>
+      <!-- TODO: Add any relevant links -->
+      <h2>Links</h2>
+      <p>
+        <a href="https://apps.apple.com/us/app/heartangel/id6743984944">Live App</a>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>Congressional App Challenge &bull; <a href="../../">Back to Showcase</a></p>
+  </footer>
+
+  <!-- Navigation script — enables arrow key navigation. Do NOT remove this. -->
+  <script src="../../assets/js/nav.js" data-root="../../"></script>
+</body>
+</html>
