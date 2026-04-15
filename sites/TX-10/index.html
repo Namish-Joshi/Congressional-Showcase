@@ -23,38 +23,67 @@
      * Or use completely your own palette. It's up to you!
      */
 
-    var(--cac-black);
-    var(--cac-white);
-    var(--cac-navy);
+  
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: system-ui, -apple-system, sans-serif;
       color: #333;
-      background: #f9fafc;
+      background: linear-gradient(135deg, #f9fafc, #e8ecf5;
       min-height: 100vh;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto;
-      padding: 4rem 2rem 3rem;
+      padding: 4rem 2rem;
     }
 
     header { text-align: center; margin-bottom: 3rem; }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header h1 { font-size: 2.7rem; margin-bottom: 0.5rem; color: var(--cac-navy) }
+    header p{
+      color: var(--cac-blue);
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
 
     section {
       background: white;
-      border-radius: 12px;
+      border-radius: 16px;
       padding: 2rem;
       margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    h2 { font-size: 1.4rem; margin-bottom: 1rem; }
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    }
+
+    h2 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--cac-navy); }
     p { line-height: 1.7; margin-bottom: 1rem; }
+
+    ul{
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .video iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+    }
 
     .video iframe {
       width: 100%;
@@ -88,16 +117,34 @@
     <section>
       <!-- TODO: Tell us about yourself -->
       <h2>Aarjit Adhikari, Namish Joshi, Jovan Nadar</h2>
-      <p>Hobbies: Pickle Ball, Marimba/Zelda, Marimba/Tennis</p>
+      
+      <h2>About Us</h2>
+      <p>
+      We are a team of students passionate about technology, productivity, and problem-solving.
+      Our interests range from athletics like pickleball and tennis to music and creative exploration.
+      </p>
+      <p>
+      Through FocusAI, we wanted to build something that directly impacts students like us—helping us stay focused in a world full of distractions.
+      </p>
     </section>
 
     <section>
       <!-- TODO: Tell us about your app -->
-      <h2>Focus AI</h2>
-      <p>FocusAI is an application used to help students fight digital distractions.</p>
-      <p>The app blocks websites using a chrome extension, and is used as a to-do list.</p>
-      <p>The app is for everyone! It helps students fight procrastination and those who suffer from ADHD.</p>
-      <p>React/JavaScript, HTML, CSS</p>
+      <h2>FocusAI</h2>
+
+      <p>
+      FocusAI is a productivity application designed to help students overcome digital distractions and build better focus habits.
+      </p>
+
+      <p>
+      It integrates a Chrome extension that blocks distracting websites with an intuitive task management system, allowing users to stay accountable and organized.
+      </p>
+
+      <p>
+      Rather than just restricting access, FocusAI encourages intentional productivity—helping students develop discipline and improve their workflow.
+      </p>
+      
+      <p><strong>Built with:</strong> React, JavaScript, HTML, CSS</p>
     </section>
 
     <section class="video">
@@ -125,8 +172,8 @@
       <!-- TODO: Add any relevant links -->
       <h2>Links</h2>
       <p>
-        <a href="https://github.com/yourusername/yourrepo">GitHub</a> &bull;
-        <a href="https://yourapp.com">Live App</a>
+        <a href="#">GitHub (Coming Soon)</a> &bull;
+        <a href="#">Live App (Coming Soon)</a>
       </p>
     </section>
   </div>
